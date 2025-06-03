@@ -1,0 +1,53 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #1e1e1e;
+}
+
+img {
+    background-image: url('../img/404-1.jpg');
+    width: 500px;;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.back {
+  background-color: #3b82f6;
+  color: white;
+  padding:  10px 20px;
+  border-radius: 10px;
+  border-color: black;
+  text-decoration: none;
+  width: 130px;
+  display: block;
+  margin: auto;
+  text-align: center;
+}
+
+.back:hover {
+  background-color: #2563eb;
+}
+
+a {
+  display: flex;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 30px;
+  justify-content: center;
+}
+
+@media (max-width: 600px) {
+  img {
+    width: 100%;
+  }
+  
+  .button {
+    width: 100%;
+    text-align: center;
+  }
+  
+  a {
+    font-size: 24px;
+  }
+}

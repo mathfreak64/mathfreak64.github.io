@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Über mich</title>
+  <link rel="stylesheet" href="/css/uebermich.css" />
+  <link rel="stylesheet" href="/css/sidebar.css" />
+</head>
+<body>
+
+  <!-- Sidebar Button -->
+  <div class="sidebar">
+    <button class="menu-toggle">&#9776;</button>
+  </div>
+
+  <!-- Slide-Menü -->
+  <nav class="slide-menu" id="slideMenu">
+    <a href="uebermich.html">Über mich</a>
+    <a href="faehigkeiten.html">Fähigkeiten</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="kontakt.html">Kontakt</a>
+  </nav>
+
+  <!-- Hauptinhalt -->
+  <div class="main-content">
+    <header>
+        <h1>Über mich</h1>
+      </header>
+    <main class="content">
+
+      <section class="intro">
+        <img src="/img/ivano.png" alt="Ivano Profilbild" class="profile-pic" />
+        <div class="intro-text">
+          <h2>Hi, ich bin Ivano</h2>
+          <div class="blue-lines">
+            <div class="line"></div>
+          </div>
+          <p>
+            ich bin 16 Jahre alt, gehe in die IMS-T<br>
+            und interessiere mich für Programmieren,<br>
+            Volleyball und Gaming.
+          </p>
+          <div class="blue-lines">
+            <div class="line"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="info-boxes">
+        <div class="box">
+          <h3>Steckbrief</h3>
+          <ul>
+            <li><strong>Geburtsdatum:</strong> 01.11.2008</li>
+            <li><strong>Wohnort:</strong> St. Gallen</li>
+            <li><strong>Hobbys:</strong> Volleyball, Gaming</li>
+            <li><strong>Berufswunsch:</strong> Informatiker</li>
+            <li><strong>Lieblingsfilm:</strong> The Amazing Spiderman</li>
+          </ul>
+        </div>
+
+        <div class="box">
+          <h3>Fun Facts</h3>
+          <ul>
+            <li>Ich bin 1.95m gross</li><br>
+            <li>Marvel-Fan</li><br>
+            <li>Ich kann 63 Push-ups am Stück</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <footer>
+        <div class="kontakt">
+          <p><strong>Kontakt</strong><br>
+          Ivano Pervan<br>
+          Rappensteinstrasse 8<br>
+          CH-9000 St. Gallen<br>
+          +41 78 206 57 06<br>
+          ivanop746@gmail.com</p>
+        </div>
+        <div class="schule">
+          <p>Schüler 1. Lehrjahr<br>
+          Schule: IMS-T GBS</p>
+        </div>
+      </footer>
+
+  <!-- Script für Menü -->
+  <script>
+    const toggleButton = document.querySelector('.menu-toggle');
+    const slideMenu = document.getElementById('slideMenu');
+
+    toggleButton.addEventListener('click', () => {
+      slideMenu.classList.toggle('open');
+    });
+  </script>
+</body>
+</html>

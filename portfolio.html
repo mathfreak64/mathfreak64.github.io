@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="/css/portfolio.css" />
+    <link rel="stylesheet" href="/css/sidebar.css" />
+</head>
+<body>
+
+  <!-- Sidebar Button -->
+  <div class="sidebar">
+    <button class="menu-toggle">&#9776;</button>
+  </div>
+
+  <!-- Slide-Menü -->
+  <nav class="slide-menu" id="slideMenu">
+    <a href="uebermich.html">Über mich</a>
+    <a href="faehigkeiten.html">Fähigkeiten</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="kontakt.html">Kontakt</a>
+  </nav>
+
+  <!-- Hauptbereich -->
+  <div class="content">
+    <header>
+      <h1>Portfolio</h1>
+    </header>
+    <div class="projects">
+
+      <div class="project-box-1">
+        <h2 class="project-box-1-h2">Leidener Flasche</h2>
+        <p class="project-box-1-p">Einfacher elektrischer Energiespeicher aus Alltagsmaterialien wie Aluminium, PET-Flasche und Wasser.</p>
+        <div class="button" href="h04.html" id="sendButton">Mehr erfahren</div>
+      </div>
+
+      <div class="project-box">
+        <h2>Meine Webseite</h2>
+        <p>Schulprojekt mit HTML und CSS. Fokus auf einheitliches Design, Sidebar, dunkles Theme und einfache Navigation.</p>
+        <div class="button" href="h04.html" id="sendButton">Mehr erfahren</div>
+      </div>
+
+      <div class="project-box">
+        <h2>Shopify Store</h2>
+        <p>Eigenständig erstellter Online-Shop mit Dropshipping-Produkten und Social-Media-Marketing.</p>
+        <div class="button" href="h04.html" id="sendButton">Mehr erfahren</div>
+      </div>
+    </div>  
+    <iframe src="https://www.youtube.com/embed/xvFZjo5PgG0?autoplay=1"></iframe>
+</div>
+    <!-- Footer -->
+      <footer>
+        <div class="kontakt">
+          <p><strong>Kontakt</strong><br>
+          Ivano Pervan<br>
+          Rappensteinstrasse 8<br>
+          CH-9000 St. Gallen<br>
+          +41 78 206 57 06<br>
+          ivanop746@gmail.com</p>
+        </div>
+        <div class="schule">
+          <p>Schüler 1. Lehrjahr<br>
+          Schule: IMS-T GBS</p>
+        </div>
+      </footer>
+<script>
+    const toggleButton = document.querySelector('.menu-toggle');
+    const slideMenu = document.getElementById('slideMenu');
+
+    toggleButton.addEventListener('click', () => {
+      slideMenu.classList.toggle('open');
+    });
+  </script>
+
+  <script>
+  document.getElementById('sendButton').addEventListener('click', function() {
+    window.location.href = '404.html';
+  });
+</script>
+</body>
+</html>

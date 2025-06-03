@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt</title>
+    <link rel="stylesheet" href="/css/kontakt.css">
+    <link rel="stylesheet" href="/css/sidebar.css">
+</head>
+<body>
+
+     <!-- Sidebar Button -->
+  <div class="sidebar">
+    <button class="menu-toggle">&#9776;</button>
+  </div>
+
+  <!-- Slide-Menü -->
+  <nav class="slide-menu" id="slideMenu">
+    <a href="uebermich.html">Über mich</a>
+    <a href="faehigkeiten.html">Fähigkeiten</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="kontakt.html">Kontakt</a>
+  </nav>
+  
+    <div class="content">
+  <header>
+    <h1>Kontakt</h1>
+  </header>
+  <div class="titel">
+    <h1>Kontaktformular</h1>
+  </div>
+
+  <!-- Input field for Name -->
+  <input type="text" class="whiteboxname" placeholder="Name" />
+
+  <!-- Input field for Email -->
+  <input type="email" class="whiteboxmail" placeholder="E-Mail" />
+
+  <!-- Textarea for Nachricht -->
+  <textarea class="whiteboxmessage" placeholder="Nachricht"></textarea>
+
+  <!-- Senden Button -->
+  <button type="button" class="whiteboxsend" id="sendButton"><strong>Senden</strong></button>
+</div>
+
+  </div>
+
+  <!-- Footer -->
+      <footer>
+        <div class="kontakt">
+          <p><strong>Kontakt</strong><br>
+          Ivano Pervan<br>
+          Rappensteinstrasse 8<br>
+          CH-9000 St. Gallen<br>
+          +41 78 206 57 06<br>
+          ivanop746@gmail.com</p>
+        </div>
+        <div class="schule">
+          <p>Schüler 1. Lehrjahr<br>
+          Schule: IMS-T GBS</p>
+        </div>
+      </footer>
+<script>
+    const toggleButton = document.querySelector('.menu-toggle');
+    const slideMenu = document.getElementById('slideMenu');
+
+    toggleButton.addEventListener('click', () => {
+      slideMenu.classList.toggle('open');
+    });
+  </script>
+
+  <script>
+  document.getElementById('sendButton').addEventListener('click', function() {
+    window.location.href = '404.html';
+  });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meine Fähigkeiten</title>
+  <link rel="stylesheet" href="/css/faehigkeiten.css" />
+  <link rel="stylesheet" href="/css/sidebar.css" />
+</head>
+<body>
+
+  <!-- Sidebar-Button -->
+  <div class="sidebar">
+    <button class="menu-toggle">&#9776;</button>
+  </div>
+
+  <!-- Slide-Menü -->
+  <nav class="slide-menu" id="slideMenu">
+    <a href="uebermich.html">Über mich</a>
+    <a href="faehigkeiten.html" class="active">Fähigkeiten</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="kontakt.html">Kontakt</a>
+  </nav>
+
+  <!-- Hauptinhalt -->
+  <div class="main-content">
+    <header>
+      <h1>Meine Fähigkeiten</h1>
+    </header>
+
+    <!-- Icons -->
+    <section class="skills-icons">
+      <div class="skill-card">
+        <img src="img/computer.png" alt="Informatik Icon" />
+        <p>Informatik</p>
+      </div>
+      <div class="skill-card">
+        <img src="img/kopf.png" alt="Kritikfähigkeit Icon" />
+        <p>Kritikfähigkeit</p>
+      </div>
+      <div class="skill-card">
+        <img src="img/buch.png" alt="Englischkenntnisse Icon" />
+        <p>Englischkenntnisse</p>
+      </div>
+    </section>
+
+    <!-- Beschreibung -->
+    <section class="skills-description">
+      <br><p class="description"><strong>Informatik</strong><br>
+        Programmierkenntnisse in C, C#, MySQL und HTML & CSS.</p><br>
+
+      <p class="description"><strong>Kritikfähigkeit</strong><br>
+        Offen für Feedback und bereit zur Verbesserung.</p><br>
+
+      <p class="description"><strong>Englischkenntnisse</strong><br>
+        IT-bezogene Texte verstehen und nutzen (Dokumentationen, Tutorials).</p>
+    </section>
+  </div>
+
+  <!-- Footer -->
+      <footer>
+        <div class="kontakt">
+          <p><strong>Kontakt</strong><br>
+          Ivano Pervan<br>
+          Rappensteinstrasse 8<br>
+          CH-9000 St. Gallen<br>
+          +41 78 206 57 06<br>
+          ivanop746@gmail.com</p>
+        </div>
+        <div class="schule">
+          <p>Schüler 1. Lehrjahr<br>
+          Schule: IMS-T GBS</p>
+        </div>
+      </footer>
+
+  <!-- JS -->
+  <script>
+    const toggleButton = document.querySelector('.menu-toggle');
+    const slideMenu = document.getElementById('slideMenu');
+
+    toggleButton.addEventListener('click', () => {
+      slideMenu.classList.toggle('open');
+    });
+  </script>
+</body>
+</html>
